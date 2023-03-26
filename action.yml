@@ -1,13 +1,17 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: "Wait"
+description: "Wait a designated number of milliseconds"
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  start-point:
+    description: "enter the starting point"
     required: true
-    default: '1000'
+    default: "./"
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  level_1: # output will be available to future steps
+    description: "your score on level 1 of HTML Topics"
+  level_2: # output will be available to future steps
+    description: "your score on level 2 of HTML Topics"
+  level_3: # output will be available to future steps
+    description: "your score on level 3 of HTML Topics"
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
