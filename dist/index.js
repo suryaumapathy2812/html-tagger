@@ -30462,7 +30462,7 @@ async function run() {
     core.info(`Starting point will be  ${startPoint}`);
 
     const score = html_tagger(startPoint)
-    core.info(`Your score in HTML is \n ${score}`)
+    core.info(`Your score in HTML is \n ${JSON.stringify(score)}`)
 
     core.setOutput("level_1", score["level_1"])
     core.setOutput("level_2", score["level_2"])
