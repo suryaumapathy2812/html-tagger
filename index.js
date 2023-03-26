@@ -9,7 +9,7 @@ async function run() {
     const startPoint = core.getInput('start-point');
     core.info(`Starting point will be  ${startPoint}`);
 
-    const score = html_tagger()
+    const score = html_tagger(startPoint)
     core.info(`Your score in HTML is \n ${score}`)
 
     core.setOutput("level_1", score["level_1"])
